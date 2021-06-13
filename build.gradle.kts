@@ -1,7 +1,7 @@
 plugins {
     java
-    kotlin("jvm") version "1.4.0"
-    kotlin("plugin.serialization") version "1.4.0"
+    kotlin("jvm") version "1.5.10"
+    kotlin("plugin.serialization") version "1.5.10"
     id("org.jetbrains.dokka") version "1.4.0-rc"
     `maven-publish`
     id("com.jfrog.bintray") version "1.8.4"
@@ -17,11 +17,11 @@ version = "0.0.1"
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("io.ktor:ktor-client-serialization-jvm:1.4.0")
-    implementation("io.ktor:ktor-client-apache:1.4.0")
-    implementation("io.ktor:ktor-client-auth-jvm:1.4.0")
+    implementation("io.ktor:ktor-client-serialization-jvm:1.6.0")
+    implementation("io.ktor:ktor-client-apache:1.6.0")
+    implementation("io.ktor:ktor-client-auth-jvm:1.6.0")
     testImplementation("junit:junit:4.13")
-    testImplementation("io.ktor:ktor-client-mock-jvm:1.4.0")
+    testImplementation("io.ktor:ktor-client-mock-jvm:1.6.0")
 }
 
 fun getFilePaths(folderPath: String): List<String> {
