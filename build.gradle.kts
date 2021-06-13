@@ -13,7 +13,7 @@ repositories {
 }
 
 group = "com.github.frozencure"
-version = "0.0.1"
+version = "0.0.2"
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
