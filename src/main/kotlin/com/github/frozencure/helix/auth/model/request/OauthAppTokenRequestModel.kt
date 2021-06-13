@@ -30,7 +30,7 @@ data class OauthAppTokenRequestModel(
         return mapOf(
             "client_id" to clientId,
             "client_secret" to clientSecret,
-            "scope" to scopes,
+            "scope" to scopes?.map { it.scope },
             "grant_type" to grantType
         )
     }

@@ -45,7 +45,7 @@ data class OauthUserTokenRequestModel(
             "client_id" to clientId,
             "redirect_uri" to redirectUri,
             "response_type" to responseType,
-            "scope" to scopes,
+            "scope" to scopes.map { it.scope },
             "force_verify" to forceVerify,
             "state" to state
         )
